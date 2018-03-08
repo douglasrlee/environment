@@ -1,0 +1,20 @@
+#!/bin/sh
+
+if ! command -v brew >/dev/null; then
+  echo "Installing Homebrew"
+
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+echo "Updating Homebrew"
+brew update
+
+echo "Installing Brew / Cask Applications"
+brew bundle --file=- <<EOF
+  # Taps
+  tap "caskroom/cask"
+
+  # Casks
+  cask "spectacle"
+  cask "macdown"
+EOF
