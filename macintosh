@@ -18,6 +18,9 @@ brew bundle --file=- <<EOF
   cask "spectacle"
   cask "macdown"
   cask "iterm2"
+
+  # Unix
+  brew "tmux"
 EOF
 
 echo "Checking shell version..."
