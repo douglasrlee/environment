@@ -31,4 +31,15 @@ case "$SHELL" in
     echo "Changing to use zsh..."
     chsh -s "$(which zsh)" ;;
 esac
-  
+
+echo "Checking for Prezto..."
+if ! [[ -s "${ZDOTDIR:-$HOME}/.zprezto" ]]; then
+  echo "Installing Prezto..."
+  git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+  for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/*; do
+    if [ $rcfile != "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/README.md ]; then
+      ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.$(cut -d'/' -f6 <<<"$rcfile")"
+    fi
+  done
+fi
