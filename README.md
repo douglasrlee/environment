@@ -1,6 +1,10 @@
 # Environment
 This will setup your computer's environment.
 
+## Installation
+1. Clone to your computer: `git clone git@github.com:douglasrlee/environment.git`
+2. Run script for your OS: `./macintosh`
+
 ## Installed Applications:
 * [Homebrew](https://brew.sh)
 * [Spectacle](https://www.spectacleapp.com)
