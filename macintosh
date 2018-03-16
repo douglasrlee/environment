@@ -35,9 +35,10 @@ esac
 echo "Checking for Prezto..."
 if ! [[ -s "${ZDOTDIR:-$HOME}/.zprezto" ]]; then
   echo "Installing Prezto..."
+  git -C "./zprezto/" checkout master
+  git -C "./zprezto/" pull
+  git -C "./zprezto/" submodule update --init --recursive
   cp -a ./prezto/ "${ZDOTDIR:-$HOME}/.zprezto"
-  git -C "${ZDOTDIR:-$HOME}/.zprezto" pull
-  git -C "${ZDOTDIR:-$HOME}/.zprezto" submodule update --init --recursive
 
   for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/*; do
     if [ $rcfile != "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/README.md ]; then
