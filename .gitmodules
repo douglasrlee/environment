@@ -1,0 +1,6 @@
+[submodule "test"]
+	path = test
+	url = https://github.com/sorin-ionescu/prezto
+[submodule "prezto"]
+	path = prezto
+	url = https://github.com/sorin-ionescu/prezto
