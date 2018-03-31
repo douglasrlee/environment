@@ -18,6 +18,7 @@ brew bundle --file=- <<EOF
   cask "spectacle"
   cask "macdown"
   cask "iterm2"
+  cask "steam"
 
   # Unix
   brew "tmux"
