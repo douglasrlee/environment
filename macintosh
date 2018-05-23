@@ -19,6 +19,8 @@ brew bundle --file=- <<EOF
   cask "macdown"
   cask "iterm2"
   cask "steam"
+  cask "eclipse-ide"
+  cask "java"
 
   # Unix
   brew "tmux"
