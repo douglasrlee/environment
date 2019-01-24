@@ -16,3 +16,4 @@ This will setup your computer's environment.
   * [Prezto](https://github.com/sorin-ionescu/prezto)
   * [Vundle](https://github.com/VundleVim/Vundle.vim)
 * [Alfred](https://www.alfredapp.com/)
+* [Karabiner](https://pqrs.org/osx/karabiner/)

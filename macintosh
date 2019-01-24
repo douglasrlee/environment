@@ -23,6 +23,7 @@ brew bundle --file=- <<EOF
   cask "eclipse-ide"
   cask "java"
   cask "alfred"
+  cask "karabiner-elements"
 
   # Unix
   brew "tmux"
