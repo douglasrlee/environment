@@ -65,4 +65,7 @@ vim +PluginInstall +qall
 echo "Updating git configuration..."
 git config --global core.editor "vim"
 
+echo "Updating tmux configuration..."
+cp -a ./tmux/.tmux.conf "${ZDOTDIR:-$HOME}/.tmux.conf"
+
 echo "Restart your shell to see changes..."
