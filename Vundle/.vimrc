@@ -13,3 +13,7 @@ filetype plugin indent on
 
 syntax on
 colorscheme molokai
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
