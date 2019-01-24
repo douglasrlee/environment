@@ -14,3 +14,5 @@ This will setup your computer's environment.
   * [tmux](https://github.com/tmux/tmux)
   * [zsh](http://zsh.sourceforge.net)
   * [Prezto](https://github.com/sorin-ionescu/prezto)
+  * [Vundle](https://github.com/VundleVim/Vundle.vim)
+* [Alfred](https://www.alfredapp.com/)
