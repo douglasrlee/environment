@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo "Checking for homebrew..."
 if ! command -v brew >/dev/null; then
   echo "Installing homebrew..."
 
@@ -9,7 +10,7 @@ fi
 echo "Updating homebrew..."
 brew update
 
-echo "Installing brew / cask applications..."
+echo "Installing/Updating brew/cask applications..."
 brew bundle --file=- <<EOF
   # Taps
   tap "caskroom/cask"
@@ -49,5 +50,15 @@ if ! [[ -s "${ZDOTDIR:-$HOME}/.zprezto" ]]; then
     fi
   done
 fi
+
+echo "Checking for Vundle..."
+if ! [[ -s "${ZDOTDIR:-$HOME}/.vim/bundle/Vundle.vim" ]]; then
+  echo "Installing Vundle..."
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+
+echo "Installing/Updating .vimrc..."
+cp -a ./Vundle/.vimrc "${ZDOTDIR:-$HOME}/.vimrc"
+vim +PluginInstall +qall
 
 echo "Restart your shell to see changes..."
