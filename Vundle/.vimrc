@@ -11,9 +11,13 @@ Plugin 'nviennot/molokai'
 call vundle#end()
 filetype plugin indent on
 
-syntax on
-colorscheme molokai
+syntax on " set syntax highlighting
+colorscheme molokai " set color scheme
 
+" use spaces instead of tabs
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+set list!
+set listchars=tab:▸\ ,trail:•,extends:»,precedes:« " show whitespace characters
