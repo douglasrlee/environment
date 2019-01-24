@@ -62,4 +62,7 @@ echo "Installing/Updating .vimrc..."
 cp -a ./Vundle/.vimrc "${ZDOTDIR:-$HOME}/.vimrc"
 vim +PluginInstall +qall
 
+echo "Updating git configuration..."
+git config --global core.editor "vim"
+
 echo "Restart your shell to see changes..."
