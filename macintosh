@@ -22,6 +22,7 @@ brew bundle --file=- <<EOF
   cask "steam"
   cask "eclipse-ide"
   cask "java"
+  cask "alfred"
 
   # Unix
   brew "tmux"
