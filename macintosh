@@ -21,12 +21,12 @@ brew bundle --file=- <<EOF
   cask "iterm2"
   cask "steam"
   cask "eclipse-ide"
-  cask "java"
   cask "alfred"
   cask "karabiner-elements"
 
   # Unix
   brew "tmux"
+  brew "jabba"
 EOF
 
 echo "Checking shell version..."
