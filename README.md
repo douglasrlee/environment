@@ -18,3 +18,4 @@ This will setup your computer's environment.
 * [Alfred](https://www.alfredapp.com/)
 * [jabba](https://github.com/shyiko/jabba)
 * [Karabiner](https://pqrs.org/osx/karabiner/)
+* [Bartender](https://www.macbartender.com/)
