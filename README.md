@@ -19,3 +19,4 @@ This will setup your computer's environment.
 * [jabba](https://github.com/shyiko/jabba)
 * [Karabiner](https://pqrs.org/osx/karabiner/)
 * [Bartender](https://www.macbartender.com/)
+* [Battle.net](https://www.blizzard.com/)

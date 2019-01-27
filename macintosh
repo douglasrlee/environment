@@ -24,6 +24,7 @@ brew bundle --file=- <<EOF
   cask "alfred"
   cask "karabiner-elements"
   cask "bartender"
+  cask "battle-net"
 
   # Unix
   brew "tmux"
