@@ -72,4 +72,10 @@ git config --global core.editor "vim"
 echo "Updating tmux configuration..."
 cp -a ./tmux/.tmux.conf "${ZDOTDIR:-$HOME}/.tmux.conf"
 
+echo "Checking for rbenv init..."
+if ! grep -q 'eval "$(rbenv init -)"' "${ZDOTDIR:-$HOME}/.zshrc"; then
+  echo "Adding rbenv init..."
+  echo '\neval "$(rbenv init -)"\n' >> "${ZDOTDIR:-$HOME}/.zshrc"
+fi
+
 echo "Restart your shell to see changes..."
