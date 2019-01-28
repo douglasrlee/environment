@@ -20,3 +20,4 @@ This will setup your computer's environment.
 * [Karabiner](https://pqrs.org/osx/karabiner/)
 * [Bartender](https://www.macbartender.com/)
 * [Battle.net](https://www.blizzard.com/)
+* [rbenv](https://github.com/rbenv/rbenv)

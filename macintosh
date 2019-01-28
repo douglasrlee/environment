@@ -29,6 +29,7 @@ brew bundle --file=- <<EOF
   # Unix
   brew "tmux"
   brew "jabba"
+  brew "rbenv"
 EOF
 
 echo "Checking shell version..."
