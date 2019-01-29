@@ -25,11 +25,14 @@ brew bundle --file=- <<EOF
   cask "karabiner-elements"
   cask "bartender"
   cask "battle-net"
+  cask "docker"
+  cask "pg-commander"
 
   # Unix
   brew "tmux"
   brew "jabba"
   brew "rbenv"
+  brew "docker-compose"
 EOF
 
 echo "Checking shell version..."

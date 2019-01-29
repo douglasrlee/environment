@@ -21,3 +21,6 @@ This will setup your computer's environment.
 * [Bartender](https://www.macbartender.com/)
 * [Battle.net](https://www.blizzard.com/)
 * [rbenv](https://github.com/rbenv/rbenv)
+* [PG Commander](https://eggerapps.at/pgcommander/)
+* [docker](https://www.docker.com/)
+* [docker-compose](https://github.com/docker/compose)
