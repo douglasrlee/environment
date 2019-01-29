@@ -25,3 +25,4 @@ This will setup your computer's environment.
 * [docker](https://www.docker.com/)
 * [docker-compose](https://github.com/docker/compose)
 * [postman](https://www.getpostman.com/)
+* [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)

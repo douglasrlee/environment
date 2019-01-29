@@ -34,6 +34,7 @@ brew bundle --file=- <<EOF
   brew "jabba"
   brew "rbenv"
   brew "docker-compose"
+  brew "the_silver_searcher"
 EOF
 
 echo "Checking shell version..."
