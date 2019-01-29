@@ -24,3 +24,4 @@ This will setup your computer's environment.
 * [PG Commander](https://eggerapps.at/pgcommander/)
 * [docker](https://www.docker.com/)
 * [docker-compose](https://github.com/docker/compose)
+* [postman](https://www.getpostman.com/)
