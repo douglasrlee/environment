@@ -15,6 +15,8 @@ filetype plugin indent on
 syntax on " set syntax highlighting
 colorscheme molokai " set color scheme
 
+set number
+
 " use spaces instead of tabs
 set tabstop=2
 set shiftwidth=2
@@ -36,3 +38,9 @@ map \| :NERDTreeFind<CR>
 
 " Fix ^G
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+" Sets the swap file directory
+set directory=/tmp
+
+let mapleader=','
+let localmapleader=','
