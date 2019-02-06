@@ -28,6 +28,7 @@ brew bundle --file=- <<EOF
   cask "docker"
   cask "pg-commander"
   cask "postman"
+  cask "codeship/taps/jet"
 
   # Unix
   brew "tmux"
