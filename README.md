@@ -29,3 +29,4 @@ This will setup your computer's environment.
 * [Google Chrome](https://www.google.com/chrome/)
 * [Zoom](https://zoom.us/)
 * [docker](https://www.docker.com/)
+* [haptic touch bar](https://www.haptictouchbar.com/)

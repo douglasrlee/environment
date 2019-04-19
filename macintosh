@@ -36,6 +36,7 @@ brew bundle --file=- <<EOF
   cask "slack"
   cask "zoomus"
   cask "google-chrome"
+  cask "haptic-touch-bar"
 
   # Unix
   brew "tmux"
