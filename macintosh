@@ -7,6 +7,12 @@ if ! command -v brew >/dev/null; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+echo "Installing/Updating jabba..."
+curl -sL https://github.com/shyiko/jabba/raw/master/install.sh | bash && . ~/.jabba/jabba.sh
+[ -s "/Users/douglasrlee/.jabba/jabba.sh" ] && source "/Users/douglasrlee/.jabba/jabba.sh"
+jabba install zulu@1.8.212
+jabba alias default zulu@1.8.212
+
 echo "Updating homebrew..."
 brew update
 
@@ -19,16 +25,17 @@ brew bundle --file=- <<EOF
   cask "spectacle"
   cask "macdown"
   cask "iterm2"
-  cask "steam"
   cask "eclipse-ide"
   cask "alfred"
   cask "karabiner-elements"
   cask "bartender"
-  cask "battle-net"
   cask "docker"
   cask "pg-commander"
   cask "postman"
   cask "codeship/taps/jet"
+  cask "slack"
+  cask "zoomus"
+  cask "google-chrome"
 
   # Unix
   brew "tmux"
@@ -84,5 +91,8 @@ if ! grep -q 'eval "$(rbenv init -)"' "${ZDOTDIR:-$HOME}/.zshrc"; then
   echo "Adding rbenv init..."
   echo '\neval "$(rbenv init -)"\n' >> "${ZDOTDIR:-$HOME}/.zshrc"
 fi
+
+echo "Saving custom karabiner modification..."
+ditto ./karabiner/windows-bindings.json ~/.config/karabiner/assets/complex_modifications/windows-bindings.json
 
 echo "Restart your shell to see changes..."
