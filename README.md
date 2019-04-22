@@ -31,3 +31,4 @@ This will setup your computer's environment.
 * [docker](https://www.docker.com/)
 * [haptic touch bar](https://www.haptictouchbar.com/)
 * [DbVisualizer](https://www.dbvis.com/)
+* [TN5250](https://mochasoft.dk/tn5250macx.htm)
