@@ -37,6 +37,7 @@ brew bundle --file=- <<EOF
   cask "zoomus"
   cask "google-chrome"
   cask "haptic-touch-bar"
+  cask "dbvisualizer"
 
   # Unix
   brew "tmux"

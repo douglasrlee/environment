@@ -30,3 +30,4 @@ This will setup your computer's environment.
 * [Zoom](https://zoom.us/)
 * [docker](https://www.docker.com/)
 * [haptic touch bar](https://www.haptictouchbar.com/)
+* [DbVisualizer](https://www.dbvis.com/)
