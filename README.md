@@ -32,3 +32,4 @@ This will setup your computer's environment.
 * [haptic touch bar](https://www.haptictouchbar.com/)
 * [DbVisualizer](https://www.dbvis.com/)
 * [TN5250](https://mochasoft.dk/tn5250macx.htm)
+* [Spring Tool Suite](https://spring.io/tools)
