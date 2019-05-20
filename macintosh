@@ -39,6 +39,7 @@ brew bundle --file=- <<EOF
   cask "haptic-touch-bar"
   cask "dbvisualizer"
   cask "tn5250"
+  cask "textmate"
 
   # Unix
   brew "tmux"

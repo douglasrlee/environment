@@ -33,3 +33,4 @@ This will setup your computer's environment.
 * [DbVisualizer](https://www.dbvis.com/)
 * [TN5250](https://mochasoft.dk/tn5250macx.htm)
 * [Spring Tool Suite](https://spring.io/tools)
+* [TextMate](https://macromates.com/)
