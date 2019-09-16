@@ -7,7 +7,6 @@ This will setup your computer's environment.
 
 ## Installed Applications:
 * [Spectacle](https://www.spectacleapp.com)
-* [MacDown](https://macdown.uranusjr.com)
 * [iTerm2](https://www.iterm2.com)
   * [tmux](https://github.com/tmux/tmux)
   * [zsh](http://zsh.sourceforge.net)
@@ -20,6 +19,7 @@ This will setup your computer's environment.
   * [docker-compose](https://github.com/docker/compose)
   * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
   * [maven](https://maven.apache.org/)
+  * [nodenv](https://github.com/nodenv/nodenv)
 * [Alfred](https://www.alfredapp.com/)
 * [Karabiner](https://pqrs.org/osx/karabiner/)
 * [Bartender](https://www.macbartender.com/)
@@ -34,3 +34,5 @@ This will setup your computer's environment.
 * [TN5250](https://mochasoft.dk/tn5250macx.htm)
 * [Spring Tool Suite](https://spring.io/tools)
 * [TextMate](https://macromates.com/)
+* [Microsoft Office](https://www.office.com)
+* [RubyMine](https://www.jetbrains.com/ruby/)

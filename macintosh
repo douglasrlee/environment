@@ -23,7 +23,6 @@ brew bundle --file=- <<EOF
 
   # Casks
   cask "spectacle"
-  cask "macdown"
   cask "iterm2"
   cask "springtoolsuite"
   cask "alfred"
@@ -40,6 +39,8 @@ brew bundle --file=- <<EOF
   cask "dbvisualizer"
   cask "tn5250"
   cask "textmate"
+  cask "microsoft-office"
+  cask "rubymine"
 
   # Unix
   brew "tmux"
@@ -48,6 +49,7 @@ brew bundle --file=- <<EOF
   brew "docker-compose"
   brew "the_silver_searcher"
   brew "maven"
+  brew "nodenv"
 EOF
 
 echo "Checking shell version..."
@@ -81,14 +83,14 @@ if ! [[ -s "${ZDOTDIR:-$HOME}/.vim/bundle/Vundle.vim" ]]; then
 fi
 
 echo "Installing/Updating .vimrc..."
-cp -a ./Vundle/.vimrc "${ZDOTDIR:-$HOME}/.vimrc"
+cp -a ./Vundle/vimrc "${ZDOTDIR:-$HOME}/.vimrc"
 vim +PluginInstall +qall
 
 echo "Updating git configuration..."
 git config --global core.editor "vim"
 
 echo "Updating tmux configuration..."
-cp -a ./tmux/.tmux.conf "${ZDOTDIR:-$HOME}/.tmux.conf"
+cp -a ./tmux/tmux.conf "${ZDOTDIR:-$HOME}/.tmux.conf"
 
 echo "Checking for rbenv init..."
 if ! grep -q 'eval "$(rbenv init -)"' "${ZDOTDIR:-$HOME}/.zshrc"; then
