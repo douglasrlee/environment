@@ -41,6 +41,7 @@ brew bundle --file=- <<EOF
   cask "textmate"
   cask "microsoft-office"
   cask "rubymine"
+  cask "webstorm"
 
   # Unix
   brew "tmux"
@@ -50,6 +51,8 @@ brew bundle --file=- <<EOF
   brew "the_silver_searcher"
   brew "maven"
   brew "nodenv"
+  brew "postgresql@9.6"
+  brew "postgresql"
 EOF
 
 echo "Checking shell version..."

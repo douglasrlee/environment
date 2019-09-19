@@ -20,6 +20,7 @@ This will setup your computer's environment.
   * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
   * [maven](https://maven.apache.org/)
   * [nodenv](https://github.com/nodenv/nodenv)
+  * [postgresql](https://www.postgresql.org/)
 * [Alfred](https://www.alfredapp.com/)
 * [Karabiner](https://pqrs.org/osx/karabiner/)
 * [Bartender](https://www.macbartender.com/)
@@ -36,3 +37,4 @@ This will setup your computer's environment.
 * [TextMate](https://macromates.com/)
 * [Microsoft Office](https://www.office.com)
 * [RubyMine](https://www.jetbrains.com/ruby/)
+* [WebStorm](https://www.jetbrains.com/webstorm/)
