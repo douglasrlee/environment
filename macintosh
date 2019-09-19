@@ -101,6 +101,12 @@ if ! grep -q 'eval "$(rbenv init -)"' "${ZDOTDIR:-$HOME}/.zshrc"; then
   echo '\neval "$(rbenv init -)"\n' >> "${ZDOTDIR:-$HOME}/.zshrc"
 fi
 
+echo "Checking for nodenv init..."
+if ! grep -q 'eval "$(nodenv init -)"' "${ZDOTDIR:-$HOME}/.zshrc"; then
+  echo "Adding nodenv init..."
+  echo '\neval "$(nodenv init -)"\n' >> "${ZDOTDIR:-$HOME}/.zshrc"
+fi
+
 echo "Checking for default editor..."
 if ! grep -q 'export EDITOR=vi' "${ZDOTDIR:-$HOME}/.zshrc"; then
   echo "Adding default editor..."
