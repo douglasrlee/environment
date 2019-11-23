@@ -18,41 +18,26 @@ brew update
 
 echo "Installing/Updating brew/cask applications..."
 brew bundle --file=- <<EOF
-  # Taps
-  tap "caskroom/cask"
-
   # Casks
   cask "spectacle"
   cask "iterm2"
-  cask "springtoolsuite"
-  cask "alfred"
   cask "karabiner-elements"
   cask "bartender"
   cask "docker"
-  cask "pg-commander"
-  cask "postman"
   cask "codeship/taps/jet"
-  cask "slack"
-  cask "zoomus"
-  cask "google-chrome"
   cask "haptic-touch-bar"
-  cask "dbvisualizer"
-  cask "tn5250"
   cask "textmate"
-  cask "microsoft-office"
   cask "rubymine"
   cask "webstorm"
 
   # Unix
   brew "tmux"
-  brew "jabba"
   brew "rbenv"
   brew "docker-compose"
   brew "the_silver_searcher"
   brew "maven"
   brew "nodenv"
   brew "postgresql@9.6"
-  brew "postgresql"
 EOF
 
 echo "Checking shell version..."
@@ -77,6 +62,8 @@ if ! [[ -s "${ZDOTDIR:-$HOME}/.zprezto" ]]; then
       ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.$(cut -d'/' -f6 <<<"$rcfile")"
     fi
   done
+
+  echo '\nsource "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"\n' >> "${ZDOTDIR:-$HOME}/.zshrc"
 fi
 
 echo "Checking for Vundle..."
